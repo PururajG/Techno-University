@@ -1,0 +1,473 @@
+@import url();
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* --------------------------------------- Header section start here---------------------------------------------*/
+.top-arrow {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+.top-arrow i {
+    font-size: 35px;
+    color: #ff9d9d;
+    cursor: pointer;
+}
+
+.top-arrow i:hover {
+    transform: scale(1.2);
+}
+
+header {
+    background: url(Images/home.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+header .header-navbar {
+    width: 100%;
+    background: #fff7f3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-variant: small-caps;
+
+}
+
+.header-navbar .logo {
+    cursor: pointer;
+    position: relative;
+}
+
+.header-navbar .logo a {
+    text-decoration: none;
+
+}
+
+.header-navbar .logo p {
+    color: rgb(255, 167, 123);
+    font-size: 2.2em;
+    font-weight: 700;
+    /* background: #000; */
+}
+
+.header-navbar .logo p::after {
+    content: '';
+    background: #0a0a0a;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 0%;
+}
+
+
+.header-navbar .logo span {
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 4px;
+    position: absolute;
+    top: 60%;
+    left: 6.8%;
+
+}
+
+.header-navbar .nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+.header-navbar .nav-links .active {
+    color: rgb(255, 171, 143);
+}
+
+.header-navbar .nav-links ul a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+    margin: 3px;
+    display: inline-block;
+    position: relative;
+    top: 10%;
+}
+
+.header-navbar .nav-links ul a::after {
+    content: '';
+    background: #ff5555;
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    transition: all 0.2s;
+}
+
+.header-navbar .nav-links ul a:hover::after {
+    width: 100%;
+}
+
+.header-navbar .nav-links ul a:hover {
+    /* border: 1px solid rgb(142, 164, 255); */
+    color: hsl(16, 100%, 82%);
+    transition: all 0.2s;
+}
+
+/*--------------------- dropdown---------------------*/
+/* .dropdown ul li{
+    display: block;
+} */
+/* .dropdown-list ul{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    /* overflow: auto; *
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    /* display: block; /
+     width: 200px;
+    height: 250px;/
+    background: #ecac59;
+    position: absolute;
+    top: 5%; *
+
+} */
+
+/* .dropdown-list li {
+    display: block;
+    margin: 3px;
+    color: hsl(0, 0%, 6%);
+    font-size: 15px;
+    background: #ffdeb2;
+    /* padding: 5px; *
+}
+ */
+
+.nav-account a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    /* background-color: #080808; */
+    border: 1px solid rgb(255, 167, 123);
+    padding: 10px;
+    border-radius: 30px;
+    margin: 15px;
+}
+
+.nav-account a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgb(255, 167, 123);
+    transition: all 0.2s;
+}
+
+/*--------------------------- header contents ---------------------------*/
+.header-content {
+    position: absolute;
+    top: 35%;
+    left: 17%;
+    text-align: center;
+
+}
+
+.header-content h1 {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.header-content h2 {
+    color: rgb(102, 102, 102);
+
+}
+
+
+.header-content .span {
+    color: rgb(255, 167, 123);
+
+}
+
+.header-content p {
+    color: rgb(111, 111, 111);
+    font-size: 20px;
+    margin-top: 2%;
+    /* width: 580px; */
+    /* text-align: center; */
+}
+
+/*.header-content .search-box {
+    /* line-height: 15px; *
+    /* margin: auto;
+    width: 100%; *
+
+    / position: absolute;
+    top: 125%;
+    left: 20%;
+    display: flex;
+    align-items: center; 
+
+}*/
+
+.search-box button {
+    color: #000;
+    font-size: 18px;
+    padding: 8px 12px !important;
+    min-width: 300px;
+    background: rgb(255, 255, 255) !important;
+    border: 1px solid rgb(255, 177, 141) !important;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+    letter-spacing: 3px;
+}
+
+.search-box button:focus {
+    outline: none;
+}
+
+.search-box button:hover {
+    background: rgb(255, 177, 141) !important;
+    /* background:  linear-gradient(180deg, rgba(255,255,255,1) 22%, rgba(255, 143, 74, 0.653) 82%) !important; */
+    color: #fff;
+}
+
+/*
+.header-content .search-box input {
+    border: none;
+    padding: 20px 58px 20px 25px;
+    color: rgb(76, 76, 76);
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+ .header-content .search-box .bi {
+    /* background-color: rgb(255, 167, 123); /
+    padding: 18px 18px;
+    font-size: 20px;
+    border: 1px solid rgb(255, 167, 123);
+    border-radius: 50%;
+    position: relative;
+    left: -58px;
+    top: 1px;
+}
+
+.header-content .search-box .bi:hover {
+    background-color: rgb(255, 167, 123);
+    color: rgb(255, 255, 255);
+} */
+
+/* < !------------------------------------ about section start here----------------- ------------------->*/
+/* --------------section heaader start here-------------- */
+
+.section-header {
+    text-align: center;
+}
+
+.section-header h2 {
+    color: rgb(45, 45, 45);
+
+}
+
+.section-header p {
+    color: #ff9d9d;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+/* --------------section heaader end here-------------- */
+.about-section {
+    margin: 5%;
+    /* padding: 3%; */
+}
+
+.about-list {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.about-item img {
+    height: 300px;
+    height: 350px;
+    border-radius: 120px 20px 120px 20px;
+}
+
+.about-content-right span {
+    color: rgb(255, 167, 123);
+}
+
+/* ------------about number-bar------------ */
+.about-numbers {
+    margin-top: 5%;
+    /* width: 100%; */
+}
+
+.about-number-list {
+    display: flex;
+    justify-content: center;
+}
+
+.about-number-list div {
+    /* background: rgb(255, 253, 208); */
+    background: rgb(255, 199, 171);
+    margin: 10px 10px;
+    padding: 10px 20px;
+
+}
+
+.about-number-item {
+    text-align: center;
+    border-radius: 5px;
+}
+
+.about-number-item div h4 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #343434;
+
+}
+
+.about-number-item div p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #484747;
+
+}
+
+/* < !------------------------------------ course section start here----------------- ------------------->*/
+.course-section {
+    width: 90%;
+    margin: auto;
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* display: flex; */
+    flex-wrap: wrap;
+
+}
+
+.course-list button {
+    background: rgb(250, 250, 250);
+    border: 1px solid rgb(255, 167, 123);
+    /* border: none; */
+    color: black;
+}
+
+.course-list button:hover {
+    background: rgb(255, 167, 123);
+    border: 1px solid rgb(1, 1, 1);
+
+}
+
+.course-items {
+    margin: 10px;
+    /* border: 1px solid rgb(21, 21, 21); */
+    /* padding: 2%; */
+    /* width: 250px; */
+    transition: all 0.2s;
+}
+
+.course-items:hover {
+    transform: scale(1.1);
+}
+
+.course-items img {
+    height: 200px;
+    border: 1px solid black;
+    width: 100%;
+    /* padding: 2%; */
+    border-radius: 20px;
+    transition: all 0.2s;
+}
+
+/* .course-items img:hover {
+    transform: scale(1.1);
+} */
+
+
+/* < !------------------------------------ course section start here----------------- ------------------->*/
+.faculty-section {}
+
+.features-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    width: 80%;
+    margin: auto;
+    justify-content: space-evenly;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.feature-item img {
+    height: 250px;
+    border-radius: 50%;
+    width: 250px;
+
+    /* border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-top: 100px solid rgb(254, 254, 254);
+    border-radius: 50%; */
+}
+
+.feature-item p {
+    text-justify: inter-cluster;
+    color: rgb(115, 115, 115);
+    font-size: 18px;
+}
+
+
+
+/* .feature-item  {
+    border-style: solid;
+    border-color: transparent transparent rgb(255, 171, 153) transparent;
+    border-width: 0 25px 25px 25px;
+    height: 0;
+    width: 50px;
+    box-sizing: content-box;
+    position: relative;
+    margin: 20px 0 50px 0;
+  }
+  .feature-item:after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: -25px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: rgb(255, 185, 135) transparent transparent transparent;
+    border-width: 70px 50px 0 50px;
+  } */
+
+
+
+/* < !------------------------------------ gallery section start here----------------- ------------------->*/
+
+.gallery-section {
+    width: 80%;
+    margin: auto;
+}
+
+.gallery-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: 50px ,1fr; */
+    /* grid-template-columns: 350px,25px , 1fr; */
+    background: #000;
+}
+
+.gallery-item img {
+    height: 350px;
+    width: 350px;
+
+}
