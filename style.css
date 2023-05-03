@@ -282,7 +282,7 @@ header .header-navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* display: none; */
+    display: none;
 }
 
 /* .search-box button:hover .get-started-form {
