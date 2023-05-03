@@ -12,6 +12,8 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!------------ Bootstrap icons link ------------>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <!------------ Swiper js link ------------>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!------------ Custome css link ------------>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Phone.css">
@@ -22,10 +24,10 @@
 <body>
 
     <!----------------------------------------- Header section start here--------------------------------------------->
-    <header class="container-fuild ">
+    <!-- <header class="container-fuild ">
         <div class="header-navigation">
-            <div class="header-navbar">
-                <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="header-navbar"> -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <a class="navbar-brand" href="#">Jobs</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -66,7 +68,7 @@
                    
                     </div>
                 </nav>  -->
-                <div class="logo">
+    <!-- <div class="logo">
                     <a href="index.html">
                         <p>Techno </p>
                         <span>University </span>
@@ -74,10 +76,10 @@
                 </div>
                 <div class="nav-links">
                     <ul>
-                        <a href="#Home" class="active">
+                        <a href="index.html">
                             <li>Home</li>
                         </a>
-                        <a href="#About">
+                        <a href="#About" class="active">
                             <li>About us</li>
                         </a>
                         <a href="#Course">
@@ -85,8 +87,8 @@
                         </a>
 
                         <a href="#Admission">
-                            <li>Admission
-                                <!-- <div class="dropdown">
+                            <li>Admission -->
+    <!-- <div class="dropdown">
                                 <ul class="dropdown-list">
                                     <li>ADMISSION & AID</li>
                                     <li> Tuition & Aid</li>
@@ -96,7 +98,7 @@
                                     <li>Executive & Professional Admission</li>
                                 </ul>
                             </div> -->
-                            </li>
+    <!-- </li>
                         </a>
                         <a href="#Faculty">
                             <li>Faculty & Staff</li>
@@ -114,84 +116,45 @@
                     </ul>
                 </div>
                 <div class="nav-account">
-                    <a href="#"> <i class="bi bi-person-circle"></i> Sign in</a>
-                    <!-- <a href="#"> <i class="bi bi-search"></i></a> -->
+                    <a href="#"> <i class="bi bi-person-circle"></i> Sign in</a> -->
+    <!-- <a href="#"> <i class="bi bi-search"></i></a>
                 </div>
             </div>
             <div class="header-content">
                 <div class="header-text">
-                    <h1 class="">Your Welcome to <span class="span"> Techno University.</span></h1>
-                    <h2 class="">We ensure a <span class="span">Better Education</span> for a better world.</h2>
-                    <p>2400 Admissions completed are Lorem ipsum dolor sit amet,dolor . Lorem,
-                        <br> amet consectetur adipisicing elit. Neque odit, eaque.
-                    </p>
-                    <!-- <button class="btn  mt-2">Get Start</button> -->
+                    <h2 class="">We ensure a <span class="span">Better Education</span> </h2> -->
+    <!-- <button class="btn  mt-2">Get Start</button> -->
 
-                </div>
-                <div class="search-box">
-                    <!-- <div>
+    <!-- </div>
+                <div class="search-box"> -->
+    <!-- <div>
                         <input type="search" placeholder="Find your courses.?">
                     </div>
                     <div>
                         <i class="bi bi-search"></i>
 
                     </div> -->
-                    <button class="button mt-4" onclick="popupform()">Get Start</button>
+    <!-- <button class="button mt-4">Get Start</button>
                 </div>
             </div>
         </div>
         <div class="top-arrow"><i onclick="toparrow()" class="bi bi-arrow-up"></i></div>
     </header>
-  
-    <!------------------------------------ header get started popup form start here----------------- ------------------->
-    <div class="get-started-form">
-        <div>
-            <form action="#">
-                <h4 class="text-center">Fill this form </h4>
-                <hr>
-                <div>
-                    <label for="name">First name :</label>
-                    <input type="text" id="name" placeholder="enter your name">
-                </div>
-                <div>
-                    <label for="name">Last name :</label>
-                    <input type="text" id="name" placeholder="enter your name">
-                </div>
+    <script>
 
-                <div>
-                    <label for="name">Email :</label>
+        function toparrow() {
 
-                    <input type="email" placeholder="enter your email">
-                </div>
-                <div>
+        }
+    </script> -->
 
-                    <label for="name">Phone No:</label>
+    <!------------------------------------ About page header start here----------------- ------------------->
 
-                    <input type="tel" placeholder="enter your phone no">
-                </div>
-
-                <div>
-                    <label for="name">Password :</label>
-
-                    <input type="password" placeholder="enter your pwd">
-                </div>
-
-                <div>
-                    <label for="name">DOB:</label>
-
-                    <input type="date" placeholder="enter your dob">
-                </div>
-                <div class="text-center">
-                    <!-- <label for="name">your dob :</label> -->
-                    <!-- <div class="text-center"> -->
-                    <input class="btn btn-success" type="submit" value="Register now" placeholder="submit form">
-                    <!-- </div> -->
-                </div>
-            </form>
+    <div class="About-page-header">
+        <div class="about-page-text">
+            <h2 class="reg-heading">About US</h2>
+            <p class=" "><a href="index.html"><i class="bi bi-house-door"> </i>Home </a>> Login</p>
         </div>
     </div>
-
-
 
     <!------------------------------------ About section start here----------------- ------------------->
 
@@ -214,7 +177,6 @@
                     <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
                         in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 </div>
-                <a href="about-us.html"> <button class=" btn btn-info">Read more</button></a>
             </div>
         </div>
 
@@ -249,213 +211,106 @@
                     </div>
                 </div>
                 <div class="about-number-item view-more">
-                    <a href="about-us.html">
+                   
                         <div>
-                            <h4><i class="bi bi-plus-lg"> </i></h4>
-                            <p>View More.</p>
+                            <h4>2<i class="bi bi-plus-lg"> </i></h4>
+                            <p>Best Garden.</p>
                         </div>
-                    </a>
+                  
                 </div>
             </div>
 
+
+
+
+
+            <div class="about-number-list">
+                <div class="about-number-item">
+                    <div>
+                        <h4>15<i class="bi bi-plus-lg"> </i></h4>
+                        <p>Awesome Events </p>
+                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+                    </div>
+                </div>
+                <div class="about-number-item">
+                    <div>
+                        <h4>12<i class="bi bi-plus-lg"> </i></h4>
+                        <p>On Campus School</p>
+                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+                    </div>
+                </div>
+                <div class="about-number-item">
+                    <div>
+                        <h4>1200<i class="bi bi-plus-lg"> </i></h4>
+                        <p>Booooks for students.</p>
+                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+                    </div>
+                </div>
+                <div class="about-number-item">
+                    <div>
+                        <h4>2<i class="bi bi-plus-lg"> </i></h4>
+                        <p>Journals for read.</p>
+                        <!-- <p>Lorem ipsum dolor sit amet.</p> -->
+                    </div>
+                </div>
+                <div class="about-number-item view-more">
+                    
+                        <div>
+                            <h4>980<i class="bi bi-plus-lg"> </i></h4>
+                            <p>Area</p>
+                        </div>
+                    
+                </div>
+            </div>
         </div>
     </div>
 
 
-    <!------------------------------------ course section start here----------------- ------------------->
+    <!------------------------------------ how to apply section start here----------------- ------------------->
+    <div class="container About-info-section mt-5" id="Faculty">
 
-    <div class="course-section mt-5 " id="Course">
+
         <div class="section-header">
-            <h2 class="">Our Courses</h2>
-            <p>Popular courses we offer</p>
-        </div>
-
-        <div class="course-list mt-3">
-            <div class="course-items">
-                <img src="Images/ba.jpg" alt="">
-
-                <div class="text-center mt-2">
-                    <div>
-                        <h3>Bachelor of <br> Arts.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, sit.</p>
-                    </div>
-                    <button class="btn btn-info">Apply Now</button>
-                </div>
-            </div>
-            <div class="course-items">
-                <img src="Images/bsc.jpg" alt="">
-
-                <div class="text-center mt-2">
-                    <div>
-                        <h3>Bachelor of <br> Science.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, sit.</p>
-                    </div>
-                    <button class="btn btn-info">Apply Now</button>
-                </div>
-            </div>
-            <div class="course-items">
-
-                <div>
-                    <img src="Images/bca.jpg" alt="">
-                </div>
-                <div class="text-center mt-2">
-                    <div>
-                        <h3>Bachelor of Computer App.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, sit.</p>
-                    </div>
-                    <button class="btn btn-info ">Apply Now</button>
-                </div>
-            </div>
-
-            <div class="course-items">
-
-                <div>
-                    <img src="Images/bp.jpg" alt="">
-                </div>
-                <div class="text-center mt-2">
-                    <div>
-                        <h3>Bachelor of <br> Pharmacy. </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, sit.</p>
-                    </div>
-                    <button class="btn btn-info">Apply Now</button>
-                </div>
-            </div>
-
-            <div class="course-items">
-                <img src="Images/B.Tech-Bachelor-Of-Technology-The-Career-Counsellor.jpg" alt="">
-
-                <div class="text-center mt-2">
-                    <div>
-                        <h3>Bachelor of Technology.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, sit.</p>
-                    </div>
-                    <button class="btn btn-info">Apply Now</button>
-                </div>
-            </div>
-
-            <div class="course-items">
-                <img src="Images/bcom.jpg" alt="">
-
-                <div class="text-center mt-2">
-                    <div>
-                        <h3>Bachelor of Commerce</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, sit.</p>
-                    </div>
-                    <button class="btn btn-info">Apply Now</button>
-                </div>
-            </div>
-
-            <div class="course-items">
-                <img src="Images/BBA Banner.jpg" alt="">
-
-                <div class="text-center mt-2">
-                    <div>
-                        <h3>Bachelor of Business Administration.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, sit.</p>
-                    </div>
-                    <button class="btn btn-info">Apply Now</button>
-                </div>
-            </div>
-
-            <div class="course-items">
-                <img src="Images/llb-admission-2023.webp" alt="">
-
-                <div class="text-center mt-2">
-                    <div>
-                        <h3>Bachelor of <br> Law.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, sit.</p>
-                    </div>
-                    <button class="btn btn-info">Apply Now</button>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="text-center mt-5">
-            <button class="btn btn-success text-center">More Courses</button>
-
-        </div> -->
-
-    </div>
-
-
-
-    <!------------------------------------ Adminssion section start here----------------- ------------------->
-
-
-    <div class="Admission-section mt-5" id="Admission">
-        <div class="section-header">
-            <h2 class="">Admission</h2>
-            <p>Admission section</p>
+            <h2 class="">How to apply </h2>
+            <p>Admission process</p>
             <!-- <p class=" ">Please do not hesitate to contact us directly. Our team will come back to you.</p> -->
         </div>
+        <div class="how-to-apply-section">
 
-        <div class="Admission-form">
-            <div class="Admission-form-list">
-
-                <div class="Admission-form-left">
-                    <!-- <img src="Images/howtoapply.png" alt=""> -->
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusamus, est quia maxime
-                        mollitia in incidunt sapiente fugiat distinctio, unde blanditiis aliquid amet. Officia qui,
-                        cupiditate neque necessitatibus sunt possimus? Magni expedita et excepturi repellat doloribus
-                        numquam, dolor aspernatur maiores consectetur suscipit dolorem, distinctio dignissimos ab
-                        debitis id omnis nam.</p> -->
-
-                </div>
-
-                <div class="Admission-form-right">
-
-                    <form action="#">
-                        <h4 class="text-center">Fill this form </h4>
-                        <hr>
-                        <div>
-                            <label for="name">First name :</label>
-                            <input type="text" id="name" placeholder="enter your name">
-                        </div>
-                        <div>
-                            <label for="name">Last name :</label>
-                            <input type="text" id="name" placeholder="enter your name">
-                        </div>
-
-                        <div>
-                            <label for="name">Email :</label>
-
-                            <input type="email" placeholder="enter your email">
-                        </div>
-                        <div>
-
-                            <label for="name">Phone No:</label>
-
-                            <input type="tel" placeholder="enter your phone no">
-                        </div>
-
-                        <div>
-                            <label for="name">Password :</label>
-
-                            <input type="password" placeholder="enter your pwd">
-                        </div>
-
-                        <div>
-                            <label for="name">DOB:</label>
-
-                            <input type="date" placeholder="enter your dob">
-                        </div>
-                        <div class="text-center">
-                            <!-- <label for="name">your dob :</label> -->
-                            <!-- <div class="text-center"> -->
-                            <input class="btn btn-success" type="submit" value="Register now" placeholder="submit form">
-                            <!-- </div> -->
-                        </div>
-                    </form>
-                </div>
+            <div class="text-center">
+                <img src="Images/howtoapply.png" alt="">
 
             </div>
+
+            <div class="text-center apply-process-text">
+                <ul>
+                    <li>
+                        <p>Techno University offers various programs at Diloma, Under Graduate (UG) and Post Graduate
+                            (PG)
+                            You can apply for a program, Follow these steps for apply course easy;</p>
+                    </li>
+                    <li>
+                        <strong> 1. Select the Program</strong>
+                        You can select the program on the basis of your eligibility.
+                    </li>
+                    <li>
+                        <strong> 2. Fill the Registration form</strong>
+                        After selecting the program, You has to register.
+                    </li>
+
+                    <li>
+                        <strong>3. Submit the Registration/ Application for</strong>
+                        After Submit the Registration form your Application submited.
+                    </li>
+                </ul>
+            </div>
         </div>
+
+
     </div>
 
-
-
-
-
     <!------------------------------------ faculty section start here----------------- ------------------->
+
 
     <div class="faculty-section mt-5" id="Faculty">
         <div class="section-header">
@@ -495,123 +350,91 @@
         </div>
     </div>
 
-    <!------------------------------------ Gallery section start here----------------- ------------------->
 
-    <div class="gallery-section" id="Gallery">
+
+
+
+    <!------------------------------------ faculty section start here----------------- ------------------->
+
+
+    <div class="faculty-section mt-3" id="Faculty">
         <div class="section-header">
-            <h2 class="">Our Gallery</h2>
-            <p>The Awesome & Beautiful Gallery of our University</p>
-            <!-- <p class=" ">Please do not hesitate to contact us directly. Our team will come back to you.</p> -->
+            <h2 class="">Our Students</h2>
+            <p>Our Satisfied Students</p>
         </div>
-        <div class="gallery-list">
-            <div class="gallery-item">
-                <img src="Images/gallery-1.jpg" alt="">
-            </div>
 
-            <div class="gallery-item">
-                <img src="Images/gallery-2.jpg" alt="">
-            </div>
+        <section class="student-slider-section">
+            <div class="mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide ">
+                        <div class="student-item">
+                            <img src="Images/student (1).jpg" alt="">
+                            <div>
+                                <h2>Arpit Kumar </h2>
+                                <p>BCA 2020-23</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sunt.</p>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="gallery-item">
-                <img src="Images/gallery-3.jpg" alt="">
-            </div>
+                    <div class="swiper-slide">
+                        <div class="student-item">
+                            <img src="Images/student (2).jpg" alt="">
+                            <div>
+                                <h2>Joe shah</h2>
+                                <p>B.Com 2020-23</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sunt.</p>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="gallery-item">
-                <img src="Images/gallery-4.jpg" alt="">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images/gallery-5.jpg" alt="">
-            </div>
-            <div class="gallery-item">
-                <img src="Images/gallery-6.jpg" alt="">
-            </div>
-            <div class="gallery-item">
-                <img src="Images/gallery-7.jpg" alt="">
-            </div>
-            <div class="gallery-item">
-                <img src="Images/gallery-8.jpg" alt="">
-            </div>
-            <div class="gallery-item">
-                <img src="Images/gallery-9.jpg" alt="">
-            </div>
-        </div>
-    </div>
+                    <div class="swiper-slide">
+                        <div class="student-item">
+                            <img src="Images/student (3).jpg" alt="">
+                            <div>
+                                <h2>Kiran Chaturvedi</h2>
+                                <p>B.Sc 2020-23</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sunt.</p>
+                            </div>
+                        </div>
+                    </div>
 
 
+                    <div class="swiper-slide">
+                        <div class="student-item">
+                            <img src="Images/student (4).jpg" alt="">
+                            <div>
+                                <h2>Abhay yadav</h2>
+                                <p>BA 2020-23</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sunt.</p>
+                            </div>
+                        </div>
+                    </div>
 
-
-    <!-------------------------------- Here the blog section is strat -------------------------------->
-
-    <div class="Blog-container" id="Blog">
-        <div class="section-header">
-            <h2 class="">Our Blog</h2>
-            <p>Review by Students</p>
-            <!-- <p class=" ">Please do not hesitate to contact us directly. Our team will come back to you.</p> -->
-        </div>
-        <div class="Blog-list">
-            <div><img src="./Images/business.jpg" alt="Img not found">
-                <div class="Blog-text">
-                    <h3>Review</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati minima sapiente
-                        consectetur, ut iste?</p>
-                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                        class="fa fa-star"></i> <i class="fa fa-star-o"></i> <br>
-                    <button class="read-more-blog"> Read more</button>
+                    <div class="swiper-slide">
+                        <div class="student-item">
+                            <img src="Images/student (3).jpg" alt="">
+                            <div>
+                                <h2>Kiran Chaturvedi</h2>
+                                <p>BCA 2020-23</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, sunt.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- <div class="swiper-pagination"></div> -->
             </div>
-            <div><img src="./Images/journalism.jpg" alt="Img not found">
-                <div class="Blog-text">
-                    <h3>Review</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae obcaecati minima sapiente
-                        consectetur, ut iste?</p>
-                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                        class="fa fa-star"></i> <i class="fa fa-star-half-o"></i> <br>
-                    <button class="read-more-blog"> Read more</button>
-                </div>
-            </div>
+        </section>
 
-        </div>
     </div>
-
-
-    <!-------------------------------- Here the Contact section is strat -------------------------------->
-
-
-    <div class="contact-container" id="Contact">
-        <div class="section-header">
-            <h2 class="">Contact US</h2>
-            <p>Please do not hesitate to contact us directly. </p>
-            <!-- <p class=" ">Please do not hesitate to contact us directly. Our team will come back to you.</p> -->
-        </div>
-        <div class="contact-list">
-            <div class="user-form">
-                <form action="#">
-                    <input type="text" placeholder="Enter your name">
-                    <input type="email" placeholder="Enter your email">
-                    <input type="address" placeholder="Enter your address">
-                    <textarea type="textarea" cols="20" rows="1.5"
-                        placeholder="Enter your Messege">Write your messege here.. </textarea>
-                    <input class="btn" type="submit" value="Sent Messege">
-                </form>
-            </div>
-
-            <div class="location text-center">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d219.40195052068339!2d79.42235537871485!3d28.37604117756847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a00721cb6ac073%3A0x5a36b780e8a3fadf!2sNehru%20Park%20Colony%2C%20Saket%2C%20Prem%20Nagar%2C%20Bareilly%2C%20Uttar%20Pradesh%20243003!5e0!3m2!1sen!2sin!4v1647713014786!5m2!1sen!2sin"
-                    width="80%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-    </div>
-
-
-
 
 
     <!------------------------------------ Footer section start here----------------- ------------------->
 
-    <footer class="footer ">
-        <div class="Footer-container">
+
+
+    <footer class=" footer ">
+        <div class=" Footer-container">
             <div>
                 <ul class="lists">
                     <li>
@@ -721,15 +544,34 @@
     </footer>
 
 
+    <!---------------------------------------- swiper js  first ---------------------------------------->
+    <script src=" https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 
+    <!---------------------------------------- swiper js link second ---------------------------------------->
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
     <script>
-        function popupform() {
-            const x = document.getElementsByClassName('get-started-form').style.display = "block";
-            // const y=document.getElementsByClassName('get-started-form');
-            // x.style.display = 'block'
-        }
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 2,
+                slideShadows: true,
+            },
+            // loop :true,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
     </script>
+
     <!--------------------------- Bootstrap scripts --------------------------->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
