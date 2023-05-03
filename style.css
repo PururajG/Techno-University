@@ -32,7 +32,7 @@ header {
 
 header .header-navbar {
     width: 100%;
-    background: #fff7f3;
+    /* background: #ffceb5; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -102,7 +102,7 @@ header .header-navbar {
 
 .header-navbar .nav-links ul a::after {
     content: '';
-    background: #ff5555;
+    background: #030303;
     height: 2px;
     width: 0%;
     position: absolute;
@@ -432,8 +432,8 @@ header .header-navbar {
     margin: 10px;
     border-radius: 20px;
     border: 1px solid rgb(91, 91, 91);
-    box-shadow: -5px 5px rgb(18, 18, 18);
-    padding: 5% 2%;
+    box-shadow: -5px 5px rgb(15, 20, 40);
+    padding: 10px 2%;
     /* width: 250px; */
     transition: all 0.2s;
 }
@@ -450,12 +450,45 @@ header .header-navbar {
     /* padding: 2%; */
     border-radius: 20px;
     transition: all 0.2s;
+    cursor: pointer;
 }
 
 /* .course-items img:hover {
     transform: scale(1.1);
 } */
 
+.course-items .course-text {
+    padding: 5px 5px;
+    margin: 5px 3px;
+    /* background: #aca1a1; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    /* align-items: start; */
+
+}
+
+.course-items .course-text a {
+    color: rgb(15, 20, 40);
+    text-decoration: none;
+    /* text-align: start; */
+    transition: all 0.2s;
+}
+
+
+.course-items .course-text a:hover {
+    color: rgb(169, 206, 255);
+}
+
+.course-items .course-text p {
+    /* text-align: start; */
+}
+
+
+/* hide or show more course  */
+#hide-course {
+    display: none;
+}
 
 /* < !------------------------------------ admission section start here----------------- ------------------->*/
 
@@ -632,6 +665,7 @@ header .header-navbar {
 
 .Blog-list img {
     width: 100%;
+    height: 50%;
 }
 
 .Blog-text {
@@ -647,11 +681,10 @@ header .header-navbar {
     color: #757575;
 }
 
-.Blog-text .fa {
-    color: rgb(255, 204, 21);
+.Blog-text .bi {
+    color: rgb(255, 163, 92);
     font-size: 22px;
     margin-top: 3%;
-
 }
 
 .Blog-text button {
@@ -660,7 +693,7 @@ header .header-navbar {
     border-radius: 30px;
     padding: 10px 15px;
     transition: all 0.2s;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .Blog-text button:hover {
@@ -674,15 +707,15 @@ header .header-navbar {
 .contact-container {
     width: 90%;
     margin: auto;
-    background: url(Images/Career.jpg) no-repeat;
-    background-size: cover;
+
 }
 
 
 .contact-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
+    background: url(Images/Career.jpg) no-repeat;
+    background-size: 100% 100%;
     padding: 5%;
 }
 
@@ -852,7 +885,7 @@ footer {
 /*------------------------------ header section of About us Page  css start----------------------------*/
 
 .About-page-header {
-    background: url(Images/about.avif) no-repeat;
+    background: url(Images/Educationfea.jpg) no-repeat;
     background-size: 100% 100%;
     height: 50vh;
 }
@@ -865,15 +898,15 @@ footer {
 }
 
 .about-page-text h2 {
-    color: rgb(200, 200, 200);
+    color: rgb(0, 0, 0);
 }
 
 .about-page-text p a {
-    color: white;
+    color: rgb(49, 49, 49);
 }
 
 .about-page-text p {
-    color: rgb(255, 121, 64);
+    color: rgb(255, 134, 83);
 }
 
 /*------------------------------ how to apply section of About us Page  css start----------------------------*/
@@ -930,4 +963,56 @@ footer {
 .swiper-slide img {
     display: block;
     width: 100%;
+}
+
+
+
+
+
+/*------------------------------------------------Courses details page css start------------------------------------------------*/
+
+
+/*----------------------------header section  of Courses details page css start-------------------------------*/
+.course-details-section{
+    width: 80%;
+    margin: auto;
+}
+
+.Course-details-page-header {
+    background: url(Images/about.avif) no-repeat;
+    background-size: 100% 100%;
+    height: 50vh;
+}
+
+.Course-details-page-header .Course-details-page-text {
+
+    position: absolute;
+    top: 20%;
+    left: 45%;
+}
+
+.Course-details-page-text h2 {
+    color: rgb(200, 200, 200);
+}
+
+.Course-details-page-text p a {
+    color: white;
+}
+
+.Course-details-page-text p {
+    color: rgb(132, 230, 255);
+}
+
+.course-detail-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+}
+
+.course-detail-items img {
+    width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+    border: 1px solid black;
+
 }
