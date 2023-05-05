@@ -1,3 +1,4 @@
+
 * {
     margin: 0%;
     padding: 0%;
@@ -22,16 +23,11 @@
     transform: scale(1.2);
 }
 
-/* ---------- */
 header {
     background: url(Images/home.jpg);
     height: 100vh;
     background-size: cover;
 }
-
-/* .header-navigation {
-    position: relative;
-} */
 
 header .header-navbar {
     width: 100%;
@@ -105,13 +101,13 @@ header .header-navbar {
 
 .header-navbar .nav-links ul a::after {
     content: '';
-    background: #795c5c;
+    background: #030303;
     height: 2px;
     width: 0%;
     position: absolute;
     bottom: 0%;
     left: 0%;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 
 .header-navbar .nav-links ul a:hover::after {
@@ -174,48 +170,32 @@ header .header-navbar {
 
 /*--------------------------- header contents ---------------------------*/
 .header-content {
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-    /* background: #919191; */
-    padding-top: 11rem;
-    padding-bottom: 10rem;
-}
-
-.header-text {
-    /* position: absolute; */
-    /* height: 550px; */
-    width: 60rem;
-    /* top: 30%; */
-    /* left: 7%; */
-    /* margin: 10% 20%; */
-
+    position: absolute;
+    top: 35%;
+    left: 17%;
     text-align: center;
 
 }
 
 .header-content h1 {
-    font-size: 3.2em;
+    font-size: 48px;
     font-weight: 800;
 }
 
 .header-content h2 {
     color: rgb(102, 102, 102);
-    font-size: 2em;
 
 }
 
 
 .header-content .span {
     color: rgb(255, 167, 123);
-    font-size: 1em;
 
 }
 
 .header-content p {
     color: rgb(111, 111, 111);
-    font-size: 1.09em;
+    font-size: 20px;
     margin-top: 2%;
     /* width: 580px; */
     /* text-align: center; */
@@ -234,7 +214,7 @@ header .header-navbar {
 
 }*/
 
-.header-content button {
+.search-box button {
     color: #000;
     font-size: 18px;
     padding: 8px 12px !important;
@@ -247,11 +227,11 @@ header .header-navbar {
     letter-spacing: 3px;
 }
 
-.header-content button:focus {
+.search-box button:focus {
     outline: none;
 }
 
-.header-content button:hover {
+.search-box button:hover {
     background: rgb(255, 177, 141) !important;
     /* background:  linear-gradient(180deg, rgba(255,255,255,1) 22%, rgba(255, 143, 74, 0.653) 82%) !important; */
     color: #fff;
@@ -369,46 +349,27 @@ header .header-navbar {
 .about-list {
     margin-top: 5%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: 50% 50%;
 }
-
 
 .about-item img {
-    width: 100%;
-    height: 50vh;
-    /* height: 300px;
-    height: 350px; */
+    height: 300px;
+    height: 350px;
     border-radius: 120px 20px 120px 20px;
-}
-
-.about-content-right {
-    width: 95%;
-}
-
-.about-content-right h3 {
-    font-size: 1.3rem;
 }
 
 .about-content-right span {
     color: rgb(255, 167, 123);
 }
 
-.about-content-right p {
-    font-size: 0.999rem;
-
-}
-
-/* --------------------------------------about number-bar-------------------------------------- */
+/* ------------about number-bar------------ */
 .about-numbers {
     margin-top: 5%;
     /* width: 100%; */
 }
 
 .about-number-list {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
     justify-content: center;
 }
 
@@ -448,8 +409,6 @@ header .header-navbar {
 .course-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
-
     /* display: flex; */
     flex-wrap: wrap;
 
@@ -542,10 +501,8 @@ header .header-navbar {
     background-size: 100% 100%;
     background-attachment: scroll;
     display: grid;
-    /* grid-template-columns: repeat(auto-fit,minmax(250px, 1fr)); */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-    /* grid-template-columns: 300px 1fr; */
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: 300px 1fr;
     align-items: center;
 
 }
@@ -599,7 +556,7 @@ header .header-navbar {
 /* < !------------------------------------ course section start here----------------- ------------------->*/
 /* .faculty-section {} */
 
-.faculty-list {
+.features-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
@@ -610,7 +567,7 @@ header .header-navbar {
     text-align: center;
 }
 
-.faculty-item img {
+.feature-item img {
     height: 250px;
     border-radius: 50%;
     width: 250px;
@@ -621,7 +578,7 @@ header .header-navbar {
     border-radius: 50%; */
 }
 
-.faculty-item p {
+.feature-item p {
     text-justify: inter-cluster;
     color: rgb(115, 115, 115);
     font-size: 18px;
@@ -629,7 +586,7 @@ header .header-navbar {
 
 
 
-/* .faculty-item  {
+/* .feature-item  {
     border-style: solid;
     border-color: transparent transparent rgb(255, 171, 153) transparent;
     border-width: 0 25px 25px 25px;
@@ -639,7 +596,7 @@ header .header-navbar {
     position: relative;
     margin: 20px 0 50px 0;
   }
-  .faculty-item:after {
+  .feature-item:after {
     content: "";
     position: absolute;
     top: 25px;
@@ -696,8 +653,8 @@ header .header-navbar {
     width: 100%;
     border: 1px solid black;
     cursor: pointer;
-    object-fit: cover;
-    transition: all 0.2s;
+object-fit: cover;
+transition: all 0.2s;
 
 }
 
@@ -715,7 +672,7 @@ header .header-navbar {
 
 .Blog-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     margin-top: 5%;
 
@@ -771,7 +728,7 @@ header .header-navbar {
 
 .contact-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     background: url(Images/Career.jpg) no-repeat;
     background-size: 100% 100%;
     padding: 5%;
@@ -835,8 +792,7 @@ footer {
 
 .Footer-container {
     display: grid;
-    /* grid-template-columns: repeat(5, 1fr); */
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns: repeat(5, 1fr);
     /* align-items: center; */
     font-size: 17px;
     padding: 35px;
@@ -877,7 +833,6 @@ footer {
 
 .social-acc-icon {
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     list-style: none;
@@ -888,7 +843,6 @@ footer {
     font-size: 20px;
     margin: 0px 10px;
     padding: 0px 10px;
-
 }
 
 .social-acc-icon a {
@@ -952,7 +906,7 @@ footer {
 }
 
 .About-page-header .about-page-text {
-    text-align: center;
+
     position: absolute;
     top: 20%;
     left: 45%;
@@ -971,10 +925,7 @@ footer {
 }
 
 /*------------------------------ how to apply section of About us Page  css start----------------------------*/
-.how-to-apply-section img {
-    /* height: 150px;
-    width: 450px; */
-}
+
 
 .apply-process-text ul {
     width: 70%;
@@ -1049,8 +1000,7 @@ footer {
 }
 
 .Course-details-page-header .Course-details-page-text {
-    text-align: center;
-    /* padding-top: 40%; */
+
     position: absolute;
     top: 20%;
     left: 45%;
@@ -1074,7 +1024,7 @@ footer {
     grid-gap: 10px;
 }
 
-.course-detail-items {
+.course-detail-items{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1082,7 +1032,6 @@ footer {
     text-align: center;
 
 }
-
 .course-detail-items img {
     width: 100%;
     height: 60vh;
