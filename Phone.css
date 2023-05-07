@@ -4,17 +4,7 @@
 @media only screen and (max-width:1200px) {
 
     /*--------------------------- header contents ---------------------------*/
-    /* .header-content {
-        position: absolute;
-        height: 550px;
-        width: 750px;
-        top: 30%;
-        left: 7%;
-        margin: 10% 0%;
 
-        text-align: center;
-
-    } */
 
     .header-content h1 {
         font-size: 3em;
@@ -27,11 +17,9 @@
 
     }
 
-
     .header-content .span {
         color: rgb(255, 167, 123);
-        font-size: 1.09em;
-
+        font-size: 0.9em;
     }
 
     .header-content p {
@@ -42,22 +30,64 @@
         /* text-align: center; */
     }
 
+    .header-content button {
+        font-size: 18px;
+        padding: 7px 10px !important;
+        min-width: 250px;
+
+    }
+
     /* ----------- gallery section start here--------------------*/
 
-    .gallery-list {
+    /* .gallery-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 10px;
 
-    }
+    } */
+
+
+
 
 
 }
 
 
 /*--------------- -css for Large devices (desktops, 992px and up) --------------------------------*/
+@media only screen and (max-width:992px) {
 
     /*--------------------------- header contents ---------------------------*/
+    .menu-navbar {
+        background: hsla(179, 100%, 84%, 0.785);
+        padding: 5px;
+    }
+
+    .header-navbar .nav-links ul a {
+        color: rgb(0, 0, 0) !important;
+    }
+
+    .nav-account a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        /* background-color: #080808; */
+        border: 1px solid rgb(255, 167, 123);
+        padding: 10px;
+        border-radius: 30px;
+        margin: 15px;
+    }
+
+    .nav-account a:hover {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        background-color: rgb(255, 167, 123);
+        transition: all 0.2s;
+    }
+
+    .header-navbar {
+        display: flex;
+        justify-content: space-between !important;
+    }
+
     .header-content h1 {
         font-size: 2.5em;
         font-weight: 800;
@@ -76,7 +106,7 @@
 
     .header-content p {
         color: rgb(111, 111, 111);
-        font-size: 1.02em;
+        font-size: 1.00em;
         margin-top: 2%;
         /* width: 580px; */
         /* text-align: center; */
@@ -89,6 +119,24 @@
     }
 
     /* < !------------------------------------ about section start here----------------- ------------------->*/
+
+    /* --------------section heaader start here-------------- */
+
+    .section-header {
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .section-header h2 {
+        font-size: 1.2rem;
+
+    }
+
+    .section-header p {
+        font-size: 0.777em;
+    }
+
+
     .about-list {
         margin-top: 5%;
         display: grid;
@@ -96,10 +144,14 @@
         grid-gap: 10px;
     }
 
+    /* .about-item {
+        width: 80%;
+        margin: auto;
+    } */
 
     .about-item img {
         width: 100%;
-        height: 50vh;
+        height: 30vh;
         /* height: 300px;
         height: 350px; */
         border-radius: 120px 20px 120px 20px;
@@ -118,7 +170,7 @@
     }
 
     .about-content-right p {
-        font-size: 0.999rem;
+        font-size: 0.788rem;
 
     }
 
@@ -131,22 +183,17 @@
     }
 
     /* ------------------------------------ course section start here----------------- ------------------- */
-    .course-list {
+    /* .course-list {
         display: grid;
-        /* grid-template-columns: repeat(4, 1fr); */
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-        /* display: flex; */
-        flex-wrap: wrap;
-
-    }
+    } */
 
 
     /* < !------------------------------------ course section start here----------------- ------------------->*/
     .faculty-list {
         display: grid;
         /* grid-template-columns: repeat(4, 1fr); */
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
         grid-gap: 30px;
         width: 80%;
         margin: auto;
@@ -156,39 +203,31 @@
     }
 
     /* < !------------------------------------ gallery section start here----------------- ------------------->*/
-    .gallery-list {
+    /* .gallery-list {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
         grid-gap: 10px;
 
-    }
+    } */
 
-    /*------------------------------ how to apply section of About us Page  css start----------------------------*/
-    .how-to-apply-section img {
-        height: 150px;
-        width: 450px;
-    }
 
-/*----------------------------header section  of Courses details page css start-------------------------------*/
+
+    /*----------------------------header section  of Courses details page css start-------------------------------*/
 
     .course-detail-items img {
-        width: 100%;
-        height: 22vh;
-        border-radius: 10px;
-        border: 1px solid black;
-    
+           height: 38vh;
     }
+}
 
 
 
 /*--------------- -css for Medium devices (tablets, 768px and up) --------------------------------*/
 
+@media only screen and (max-width:768px) {
 
 
     /*--------------------------- header contents ---------------------------*/
-
-
     .header-content h1 {
         font-size: 2em;
         font-weight: 800;
@@ -222,14 +261,67 @@
         min-width: 200px;
     }
 
+    /* < !------------------------------------ about section start here----------------- ------------------->*/
 
+    /* --------------section heaader start here-------------- */
 
+    .section-header {
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .section-header h2 {
+        font-size: 1rem;
+
+    }
+
+    .section-header p {
+        font-size: 0.555em;
+    }
+
+    /*----------------------------header section  of Courses details page css start-------------------------------*/
+    .Course-details-page-header {
+       
+        height: 30vh;
+    
+    }
+    
+    .Course-details-page-text {
+        position: absolute;
+        top: 10%;
+        left: 12%;
+    }
+
+    .Course-details-page-text h2 {
+        font-size: 1.1rem;
+    }
+    
+    .Course-details-page-text p a {
+        font-size: 1.1rem;
+    }
+    
+    .Course-details-page-text p {
+        font-size: 1rem;
+    }
+
+    .course-detail-items img {
+               height: 30vh;
+    }
+    
+    .course-detail-items h3 {
+        font-size: 1.4rem;
+    }
+    
+    .course-detail-items p {
+        font-size: 0.888rem;
+    }
+    
+}
 
 /*--------------- -css for  Small devices (landscape phones, 576px and up) --------------------------------*/
-
+@media only screen and (max-width:576px) {
 
     /*--------------------------- header contents ---------------------------*/
-
 
     .header-content h1 {
         font-size: 1.3em;
@@ -265,12 +357,282 @@
     }
 
 
+    /* < !------------------------------------ about section start here----------------- ------------------->*/
+
+    /* --------------section heaader start here-------------- */
 
 
+    .about-item img {
+        width: 100%;
+        height: 30vh;
+        /* height: 300px;
+        height: 350px; */
+        border-radius: 10px;
+        /* border-radius: 120px 20px 120px 20px; */
+    }
+
+    .about-content-right {
+        width: 100%;
+    }
+
+    .about-content-right h3 {
+        font-size: 1rem;
+    }
+
+    .about-content-right span {
+        color: rgb(255, 167, 123);
+        font-size: 1rem;
+
+    }
+
+    .about-content-right p {
+        font-size: 0.688rem;
+
+    }
+
+    .about-item button {
+        /* background: #000; */
+        font-size: 0.688rem;
+
+    }
+
+
+
+    /* < !------------------------------------ course section start here----------------- ------------------->*/
+
+
+    .course-items img {
+        height: 160px;
+    }
+
+    .course-items .course-text a h3 {
+        font-size: 1.1rem;
+    }
+
+    .course-items .course-text p {
+        font-size: 0.8rem;
+
+    }
+
+
+    .course-read-btn span {
+        font-size: 0.9rem;
+        padding: 3px;
+    }
+
+    .course-read-btn button {
+        font-size: 0.8rem;
+        padding: 3px 4px;
+    }
+
+
+
+    /* < !------------------------------------ faculty section start here----------------- ------------------->*/
+
+    .faculty-item {
+        padding: 0px 20px;
+    }
+
+    .faculty-item h3 {
+        font-size: 1rem;
+    }
+
+    .faculty-item p {
+        font-size: 0.8rem;
+    }
+
+    /*-------------------------------- Here the blog section is strat ------------------------------ */
+    .blog-item img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .Blog-text .bi {
+        font-size: 18px;
+        margin-top: 3%;
+    }
+
+    .Blog-text button {
+        background-color: #fff;
+        font-size: 14px;
+        border-radius: 20px;
+        /* padding: 10px 15px; */
+        transition: all 0.2s;
+        /* margin-top: 10px; */
+    }
+
+
+    /*-------------------------------- Here the Footer section is strat ------------------------------ */
+
+    .Footer-container ul li {
+        padding: 1px 2px;
+        font-size: 12px;
+
+    }
+
+    .social-acc-icon li {
+        margin: 0px 3px;
+        padding: 0px 3px;
+
+    }
+
+    .social-acc-icon a i {
+        font-size: 20px;
+    }
+
+    .copywrite {
+        color: rgba(232, 232, 232, 0.815);
+        padding-bottom: 2%;
+        /* margin-top: -3%; */
+        font-size: 14px;
+    }
+
+
+    /*------------------------------ how to apply section of About us Page  css start----------------------------*/
+
+    .how-to-apply-section img {
+        height: 120px;
+        /* width: 350px; */
+    }
+
+    /* -------------------------------- student swiper slider --------------------------------*/
+
+    .swiper-slide {
+        width: 250px;
+    }
+
+    .swiper-slide img {
+        height: 200px;
+    }
+
+    .student-item h2 {
+        font-size: 1.4rem;
+    }
+
+    .student-item .student-course {
+        font-size: 0.77rem;
+
+    }
+
+    .student-item p {
+        font-size: 0.777rem;
+    }
+
+
+
+     /*----------------------------header section  of Courses details page css start-------------------------------*/
+ 
+    
+    .Course-details-page-text {
+        position: absolute;
+        top: 10%;
+        left: 8%;
+    }
+
+    .Course-details-page-text h2 {
+        font-size: 1rem;
+    }
+    
+    .Course-details-page-text p a {
+        font-size: 0.777rem;
+    }
+    
+    .Course-details-page-text p {
+        font-size: 0.777rem;
+    }
+
+    .course-detail-items img {
+               height: 22vh;
+    }
+    
+    .course-detail-items h3 {
+        font-size: 1.2rem;
+    }
+    
+    .course-detail-items p {
+        font-size: 0.566rem;
+    }
+
+    .course-overview strong {
+        font-size: 1rem;
+    
+    }
+    
+    .course-overview p {
+        font-size: 0.656rem;
+    }
+
+    .course-overview button {
+        font-size: 0.767rem;
+        padding: 5px 5px;
+    }
+    
+}
 
 
 /*--------------- -css for more Small devices (landscape phones, 380px and up) --------------------------------*/
 
 
 /* ----------- Header section start here--------------------*/
-@media only screen and (max-width:380px) {}
+@media only screen and (max-width:390px) {
+
+    /*--------------------------- header contents ---------------------------*/
+
+
+    .header-content h1 {
+        font-size: 1em;
+        font-weight: 800;
+    }
+
+    .header-content h2 {
+        color: rgb(102, 102, 102);
+        font-size: 0.700em;
+
+    }
+
+
+    .header-content .span {
+        color: rgb(255, 167, 123);
+        font-size: 1em;
+
+    }
+
+    .header-content p {
+        color: rgb(111, 111, 111);
+        font-size: 0.606em;
+        margin-top: 2%;
+        /* width: 580px; */
+        /* text-align: center; */
+    }
+
+
+    .header-content button {
+        font-size: 12px;
+        padding: 6px 8px !important;
+        min-width: 100px;
+    }
+
+
+    /* < !------------------------------------ about section start here----------------- ------------------->*/
+
+    /* --------------section heaader start here-------------- */
+
+    .section-header {
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .section-header h2 {
+        font-size: 0.777rem;
+
+    }
+
+    .section-header p {
+        font-size: 0.444em;
+    }
+
+
+    
+
+
+}
