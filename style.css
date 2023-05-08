@@ -805,23 +805,43 @@ header .header-navbar {
     outline: none;
     /* border: none; */
     margin-top: 1em;
+    background: none;
+    border: 1px solid black;
+
+
+}
+
+.user-form [type=textarea]::placeholder {
+    color: rgb(124, 124, 124);
+
 }
 
 .user-form textarea {
     margin-top: 3%;
-    color: rgb(124, 124, 124);
+    background: none;
+    border: 1px solid black;
     width: 85%;
-    padding: 4px;
+    padding: 4px 20px;
+}
+
+.user-form textarea:focus {
+    outline: none;
+
 }
 
 .user-form .btn {
     border: 1px solid black;
     /* margin-top: 5%; */
+    outline: none;
 }
+
+/* .user-form input[type=submit]:focus {
+    outline: none !important;
+} */
 
 .user-form .btn:hover {
     border-radius: 5px;
-    background: #1f1f1f;
+    background: rgb(255, 163, 92);
     color: #fff;
 
 }
@@ -839,47 +859,43 @@ header .header-navbar {
 
 footer {
     background-color: rgb(11, 11, 11);
-    min-height: 100%;
+    height: 50%;
     background-size: cover;
     color: #ffffff;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: -5%;
-    line-height: 2.8vh;
 
 }
 
 .Footer-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     /* align-items: center; */
     padding: 35px 20px;
-    grid-gap: 0px;
+    grid-gap: 5px;
 }
 
 .Footer-container ul {
     list-style: none;
     text-align: start;
+}
 
+.Footer-container ul p {
+    font-size: 1.3rem;
 }
 
 .Footer-container ul li {
-    padding: 4px 5px;
+    padding: 0px 0px !important;
     font-size: 17px;
+    transition: all 0.2s;
 
 }
 
-/* .Footer-container ul img {
-    height: 50px;
-    width: 150px;
-    background: #ffffff;
-} */
-
-.foot-about {
-    color: #c5c5c5;
-    text-align: start;
-    font-size: 16px;
+.Footer-container ul li:hover {
+    transform: translateX(5px);
 }
+
 
 .Footer-container a {
     text-decoration: none;
@@ -916,7 +932,7 @@ footer {
 .social-acc-icon a i {
     display: block;
     color: rgb(178, 178, 178);
-    font-size: 25px;
+    font-size: 21px;
 }
 
 
@@ -1117,7 +1133,7 @@ footer {
     grid-gap: 10px;
 }
 
-.course-detail-items  {
+.course-detail-items {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1163,4 +1179,3 @@ footer {
 .course-overview p {
     font-size: 1rem;
 }
-

@@ -144,17 +144,10 @@
         grid-gap: 10px;
     }
 
-    /* .about-item {
-        width: 80%;
-        margin: auto;
-    } */
-
     .about-item img {
         width: 100%;
-        height: 30vh;
-        /* height: 300px;
-        height: 350px; */
-        border-radius: 120px 20px 120px 20px;
+        height: 50;
+        height: 70vh;
     }
 
     .about-content-right {
@@ -202,21 +195,10 @@
         text-align: center;
     }
 
-    /* < !------------------------------------ gallery section start here----------------- ------------------->*/
-    /* .gallery-list {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-        grid-gap: 10px;
-
-    } */
-
-
-
     /*----------------------------header section  of Courses details page css start-------------------------------*/
 
     .course-detail-items img {
-           height: 38vh;
+        height: 38vh;
     }
 }
 
@@ -279,13 +261,18 @@
         font-size: 0.555em;
     }
 
+
+    .about-item img {
+        width: 100%;
+        height: 60vh;
+        border-radius: 10px;
+    }
+
     /*----------------------------header section  of Courses details page css start-------------------------------*/
     .Course-details-page-header {
-       
         height: 30vh;
-    
     }
-    
+
     .Course-details-page-text {
         position: absolute;
         top: 10%;
@@ -295,27 +282,27 @@
     .Course-details-page-text h2 {
         font-size: 1.1rem;
     }
-    
+
     .Course-details-page-text p a {
         font-size: 1.1rem;
     }
-    
+
     .Course-details-page-text p {
         font-size: 1rem;
     }
 
     .course-detail-items img {
-               height: 30vh;
+        height: 30vh;
     }
-    
+
     .course-detail-items h3 {
         font-size: 1.4rem;
     }
-    
+
     .course-detail-items p {
         font-size: 0.888rem;
     }
-    
+
 }
 
 /*--------------- -css for  Small devices (landscape phones, 576px and up) --------------------------------*/
@@ -363,12 +350,7 @@
 
 
     .about-item img {
-        width: 100%;
-        height: 30vh;
-        /* height: 300px;
-        height: 350px; */
-        border-radius: 10px;
-        /* border-radius: 120px 20px 120px 20px; */
+        height: 40vh;
     }
 
     .about-content-right {
@@ -465,9 +447,12 @@
     /*-------------------------------- Here the Footer section is strat ------------------------------ */
 
     .Footer-container ul li {
-        padding: 1px 2px;
+        /* padding: 1px 2px; */
         font-size: 12px;
+    }
 
+    .Footer-container ul p {
+        font-size: 0.777rem;
     }
 
     .social-acc-icon li {
@@ -481,10 +466,8 @@
     }
 
     .copywrite {
-        color: rgba(232, 232, 232, 0.815);
-        padding-bottom: 2%;
-        /* margin-top: -3%; */
-        font-size: 14px;
+        /* padding-bottom: %; */
+        font-size: 12px;
     }
 
 
@@ -520,9 +503,9 @@
 
 
 
-     /*----------------------------header section  of Courses details page css start-------------------------------*/
- 
-    
+    /*----------------------------header section  of Courses details page css start-------------------------------*/
+
+
     .Course-details-page-text {
         position: absolute;
         top: 10%;
@@ -532,32 +515,32 @@
     .Course-details-page-text h2 {
         font-size: 1rem;
     }
-    
+
     .Course-details-page-text p a {
         font-size: 0.777rem;
     }
-    
+
     .Course-details-page-text p {
         font-size: 0.777rem;
     }
 
     .course-detail-items img {
-               height: 22vh;
+        height: 22vh;
     }
-    
+
     .course-detail-items h3 {
         font-size: 1.2rem;
     }
-    
+
     .course-detail-items p {
         font-size: 0.566rem;
     }
 
     .course-overview strong {
         font-size: 1rem;
-    
+
     }
-    
+
     .course-overview p {
         font-size: 0.656rem;
     }
@@ -566,7 +549,7 @@
         font-size: 0.767rem;
         padding: 5px 5px;
     }
-    
+
 }
 
 
@@ -616,6 +599,9 @@
     /* < !------------------------------------ about section start here----------------- ------------------->*/
 
     /* --------------section heaader start here-------------- */
+    .about-item img {
+        height: 40vh;
+    }
 
     .section-header {
         text-align: center;
@@ -632,7 +618,80 @@
     }
 
 
-    
+     /*----------------------------header section  of Courses details page css start-------------------------------*/
+     .Course-details-page-header {
+        height: 20vh;
+    }
 
+     .Course-details-page-text {
+        position: absolute;
+        top: 5%;
+        left: 8%;
+    }
+
+    .Course-details-page-text h2 {
+        font-size: 0.888rem;
+    }
+
+    .Course-details-page-text p a {
+        font-size: 0.555rem;
+    }
+
+    .Course-details-page-text p {
+        font-size: 0.555rem;
+    }
+
+    .course-detail-items img {
+        height: 20vh;
+    }
+
+    .course-detail-items h3 {
+        font-size: 1rem;
+    }
+
+    .course-detail-items p {
+        font-size: 0.444rem;
+    }
+
+    .course-overview strong {
+        font-size: 0.888rem;
+
+    }
+
+    .course-overview p {
+        font-size: 0.644rem;
+    }
+
+    .course-overview button {
+        font-size: 0.667rem;
+        padding: 4px 4px;
+    }
+
+
+        /*-------------------------------- Here the Footer section is strat ------------------------------ */
+
+        .Footer-container ul li {
+            /* padding: 1px 2px; */
+            font-size: 10px;
+        }
+    
+        .Footer-container ul p {
+            font-size: 0.644rem;
+        }
+    
+        .social-acc-icon li {
+            margin: 0px 3px;
+            padding: 0px 3px;
+    
+        }
+    
+        .social-acc-icon a i {
+            font-size: 18px;
+        }
+    
+        .copywrite {
+            /* padding-bottom: %; */
+            font-size: 10px;
+        }
 
 }
